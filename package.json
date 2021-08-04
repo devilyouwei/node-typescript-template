@@ -1,0 +1,65 @@
+{
+    "name": "node-typescript-template",
+    "version": "0.0.1",
+    "description": "A template for nodejs starting with TypeScript",
+    "author": "devilyouwei",
+    "main": "main.ts",
+    "root": true,
+    "scripts": {
+        "dev": "tsnd --respawn ./",
+        "build": "tsc"
+    },
+    "eslintConfig": {
+        "root": true,
+        "parser": "@typescript-eslint/parser",
+        "env": {
+            "node": true,
+            "es6": true
+        },
+        "extends": [
+            "eslint:recommended",
+            "plugin:@typescript-eslint/eslint-recommended",
+            "plugin:@typescript-eslint/recommended",
+            "plugin:prettier/recommended"
+        ],
+        "rules": {}
+    },
+    "prettier": {
+        "useTabs": false,
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true,
+        "jsxBracketSameLine": true,
+        "printWidth": 120,
+        "jsxSingleQuote": false,
+        "bracketSpacing": true,
+        "trailingComma": "none",
+        "arrowParens": "avoid",
+        "htmlWhitespaceSensitivity": "ignore",
+        "proseWrap": "always"
+    },
+    "dependencies": {
+        "@types/express-form-data": "^2.0.1",
+        "app-root-path": "^3.0.0",
+        "express": "^4.17.1",
+        "express-form-data": "^2.0.16",
+        "md5": "^2.3.0",
+        "typeorm": "^0.2.32"
+    },
+    "devDependencies": {
+        "@types/app-root-path": "^1.2.4",
+        "@types/express": "^4.17.11",
+        "@types/md5": "^2.3.0",
+        "@types/node": "^14.14.35",
+        "@typescript-eslint/eslint-plugin": "^4.18.0",
+        "@typescript-eslint/parser": "^4.18.0",
+        "eslint": "^7.22.0",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "prettier": "^2.2.1",
+        "ts-node": "^9.1.1",
+        "ts-node-dev": "^1.1.6",
+        "typescript": "^4.2.3"
+    },
+    "license": "MIT"
+}
